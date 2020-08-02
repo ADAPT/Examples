@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{C09C8812-E26A-4BCA-93BF-65DDDCB95D6F}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ExampleFMIS</RootNamespace>
+    <AssemblyName>ExampleFMIS</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AgGateway.ADAPT.ApplicationDataModel, Version=2.0.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AgGatewayADAPTFramework.2.0.4\lib\net451\AgGateway.ADAPT.ApplicationDataModel.dll</HintPath>
+    </Reference>
+    <Reference Include="AgGateway.ADAPT.PluginManager, Version=2.0.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AgGatewayADAPTFramework.2.0.4\lib\net451\AgGateway.ADAPT.PluginManager.dll</HintPath>
+    </Reference>
+    <Reference Include="AgGateway.ADAPT.Representation, Version=2.0.4.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\AgGatewayADAPTFramework.2.0.4\lib\net451\AgGateway.ADAPT.Representation.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="protobuf-net, Version=2.4.0.0, Culture=neutral, PublicKeyToken=257b51d87d2e4d67, processorArchitecture=MSIL">
+      <HintPath>..\packages\protobuf-net.2.4.0\lib\net40\protobuf-net.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AdaptObjects\ADAPTDataManager.cs" />
+    <Compile Include="AdaptObjects\Mappers\CropMapper.cs" />
+    <Compile Include="AdaptObjects\Mappers\CropZoneMapper.cs" />
+    <Compile Include="AdaptObjects\Mappers\FarmMapper.cs" />
+    <Compile Include="AdaptObjects\Mappers\FieldMapper.cs" />
+    <Compile Include="AdaptObjects\Mappers\GrowerMapper.cs" />
+    <Compile Include="MyDataLayer\Models\BaseModel.cs" />
+    <Compile Include="MyDataLayer\Models\Crop.cs" />
+    <Compile Include="MyDataLayer\Models\Farm.cs" />
+    <Compile Include="MyDataLayer\Models\Field.cs" />
+    <Compile Include="MyDataLayer\Models\ExternalData.cs" />
+    <Compile Include="MyDataLayer\Models\InsertedObject.cs" />
+    <Compile Include="MyDataLayer\Models\OperatingUnit.cs" />
+    <Compile Include="MyDataLayer\Models\ManagementZone.cs" />
+    <Compile Include="MyDataLayer\MyDataManager.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ADAPT\Data\ExamplePlugin\Data.myjson">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="AdaptObjects\Resources\RepresentationSystem.xml" />
+    <Content Include="AdaptObjects\Resources\UnitSystem.xml" />
+    <Content Include="ADAPT\Plugins\ExamplePlugin.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ADAPT\Plugins\Newtonsoft.Json.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\AgGatewayADAPTFramework.2.0.4\build\AgGatewayADAPTFramework.targets" Condition="Exists('..\packages\AgGatewayADAPTFramework.2.0.4\build\AgGatewayADAPTFramework.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\AgGatewayADAPTFramework.2.0.4\build\AgGatewayADAPTFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\AgGatewayADAPTFramework.2.0.4\build\AgGatewayADAPTFramework.targets'))" />
+  </Target>
+</Project>
