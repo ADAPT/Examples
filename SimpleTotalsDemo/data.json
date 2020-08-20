@@ -1,0 +1,170 @@
+[
+  {
+    "ClientId": "26e8e986-43af-40d2-995a-f12ee8f68cbc",
+    "GrowerName": "Test Grower",
+    "FarmId": {
+      "DataSourceId": "26e8e986-43af-40d2-995a-f12ee8f68cbc",
+      "Id": "7575bafd-a89f-40b4-9cb2-beb164670f6c"
+    },
+    "FarmName": "KY client",
+    "FieldName": "1",
+    "FieldId": "c60a013d-f35f-4bc3-92e1-9d9d4c42ea9f",
+    "CropZoneId": "774e2a7c-1f3c-4cf5-9fde-da2527952249",
+    "CropZoneName": "KY client\\1\\Corn : Corn",
+    "CropId": {
+      "Id": "ae8eabd4-68a1-4867-9589-104dc09eb996"
+    },
+    "Crop": "Corn",
+    "CropYear": 2017,
+    "TimingEvent": "",
+    "ApplicationId": {
+      "DataSourceId": "26e8e986-43af-40d2-995a-f12ee8f68cbc",
+      "Id": "38b47768-12d2-4480-a6e8-d15a1b0ed8a5"
+    },
+    "ApplicationName": "ED 161214 0826",
+    "StartDate": "2016-12-14T14:00:15.581Z",
+    "EndDate": "2016-12-14T16:00:15.581Z",
+    "Duration": "02:00:00",
+    "ProductId": {
+      "DataSourceId": "99999999-9999-9999-9999-999999999999",
+      "Id": "14a65d87-d9c8-4f62-bf0d-983600aa914c"
+    },
+    "Product": "Touchdown CT",
+    "Type": "CropProtection",
+    "Category": "Herbicide",
+    "Manufacturer": "Syngenta",
+    "Density": 1.3700000047684,
+    "StdPackage": "gallon",
+    "StdUnit": "gallon",
+    "StdFactor": 1,
+    "RegNo": "0000100-01212-AA-0000000",
+    "ApplicationMethod": "Ground Application",
+    "RateValue": 1.5724491177684,
+    "RateUnit": "gallon",
+    "AreaApplied": 63.595062549253,
+    "CropZoneArea": 63.595062549253,
+    "PercentOfCropZoneApplied": 1,
+    "CostPerAppliedArea": 15.72449117768414,
+    "CostPerCropZoneArea": 15.72449117768414,
+    "TotalProductQty": 100,
+    "TotalProductUnit": "gallon",
+    "TotalCost": 1000,
+    "TotalInvoiceCost": 0,
+    "TotalSpecificCost": 1000,
+    "AuthorizerId": null,
+    "Authorizer": null,
+    "AuthorizedDate": "2016-12-14T14:00:15.581Z"
+  },
+  {
+    "ClientId": "26e8e986-43af-40d2-995a-f12ee8f68cbc",
+    "GrowerName": "Test Grower",
+    "FarmId": {
+      "DataSourceId": "26e8e986-43af-40d2-995a-f12ee8f68cbc",
+      "Id": "7575bafd-a89f-40b4-9cb2-beb164670f6c"
+    },
+    "FarmName": "KY client",
+    "FieldName": "1",
+    "FieldId": "c60a013d-f35f-4bc3-92e1-9d9d4c42ea9f",
+    "CropZoneId": "774e2a7c-1f3c-4cf5-9fde-da2527952249",
+    "CropZoneName": "KY client\\1\\Corn : Corn",
+    "CropId": {
+      "Id": "ae8eabd4-68a1-4867-9589-104dc09eb996"
+    },
+    "Crop": "Corn",
+    "CropYear": 2017,
+    "TimingEvent": "",
+    "ApplicationId": {
+      "DataSourceId": "26e8e986-43af-40d2-995a-f12ee8f68cbc",
+      "Id": "3f586214-4863-4d6a-acbe-a73b95deda8e"
+    },
+    "ApplicationName": "ED 161214 0840",
+    "StartDate": "2016-12-14T14:00:22.838Z",
+    "EndDate": "2016-12-14T16:00:22.838Z",
+    "Duration": "02:00:00",
+    "ProductId": {
+      "DataSourceId": "99999999-9999-9999-9999-999999999999",
+      "Id": "14a65d87-d9c8-4f62-bf0d-983600aa914c"
+    },
+    "Product": "Touchdown CT",
+    "Type": "CropProtection",
+    "Category": "Herbicide",
+    "Manufacturer": "Syngenta",
+    "Density": 1.3700000047684,
+    "StdPackage": "gallon",
+    "StdUnit": "gallon",
+    "StdFactor": 1,
+    "RegNo": "0000100-01212-AA-0000000",
+    "ApplicationMethod": "Ground Application",
+    "RateValue": 0.31448982355368,
+    "RateUnit": "gallon",
+    "AreaApplied": 63.595062549253,
+    "CropZoneArea": 63.595062549253,
+    "PercentOfCropZoneApplied": 1,
+    "CostPerAppliedArea": 3.144898235536828,
+    "CostPerCropZoneArea": 3.144898235536828,
+    "TotalProductQty": 20,
+    "TotalProductUnit": "gallon",
+    "TotalCost": 200,
+    "TotalInvoiceCost": 0,
+    "TotalSpecificCost": 200,
+    "AuthorizerId": null,
+    "Authorizer": null,
+    "AuthorizedDate": "2016-12-14T14:00:22.838Z"
+  },
+  {
+    "ClientId": "26e8e986-43af-40d2-995a-f12ee8f68cbc",
+    "GrowerName": "Test Grower",
+    "FarmId": {
+      "DataSourceId": "26e8e986-43af-40d2-995a-f12ee8f68cbc",
+      "Id": "7575bafd-a89f-40b4-9cb2-beb164670f6c"
+    },
+    "FarmName": "KY client",
+    "FieldName": "1",
+    "FieldId": "c60a013d-f35f-4bc3-92e1-9d9d4c42ea9f",
+    "CropZoneId": "774e2a7c-1f3c-4cf5-9fde-da2527952249",
+    "CropZoneName": "KY client\\1\\Corn : Corn",
+    "CropId": {
+      "Id": "ae8eabd4-68a1-4867-9589-104dc09eb996"
+    },
+    "Crop": "Corn",
+    "CropYear": 2017,
+    "TimingEvent": "",
+    "ApplicationId": {
+      "DataSourceId": "26e8e986-43af-40d2-995a-f12ee8f68cbc",
+      "Id": "bd16fd06-c909-44ff-8147-28e27d723ffc"
+    },
+    "ApplicationName": "AG 161206 1244",
+    "StartDate": "2016-12-06T14:00:00Z",
+    "EndDate": "2016-12-06T16:00:00Z",
+    "Duration": "02:00:00",
+    "ProductId": {
+      "DataSourceId": "99999999-9999-9999-9999-999999999999",
+      "Id": "72972c93-4224-4db4-86ba-3e36d2a215b1"
+    },
+    "Product": "Gramoxone SL",
+    "Type": "CropProtection",
+    "Category": "Desiccant' and 'x'='t,Herbicide",
+    "Manufacturer": "Syngenta",
+    "Density": 1.09282,
+    "StdPackage": "gallon",
+    "StdUnit": "gallon",
+    "StdFactor": 1,
+    "RegNo": "0000100-01217-ZA-0000000",
+    "ApplicationMethod": "Ground - Variable Rate",
+    "RateValue": 2.5,
+    "RateUnit": "fluid ounce",
+    "AreaApplied": 63.595062549253,
+    "CropZoneArea": 63.595062549253,
+    "PercentOfCropZoneApplied": 1,
+    "CostPerAppliedArea": 15.72449117768414,
+    "CostPerCropZoneArea": 15.72449117768414,
+    "TotalProductQty": 1.2420910433753,
+    "TotalProductUnit": "gallon",
+    "TotalCost": 1000,
+    "TotalInvoiceCost": 0,
+    "TotalSpecificCost": 0,
+    "AuthorizerId": null,
+    "Authorizer": "",
+    "AuthorizedDate": "0001-01-01T00:00:00"
+  }
+]
